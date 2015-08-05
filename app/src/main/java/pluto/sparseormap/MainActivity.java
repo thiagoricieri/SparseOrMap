@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
     public void click(View v) {
         long ct = System.currentTimeMillis();
         myChannelsMap = parseStringArray2(this, R.array.channels_and_logos);
-        Log.d("PlutoArray", "Millis to create ArrayMap " + (System.currentTimeMillis() - ct));
+        Log.d("PlutoArray", "Millis to create res ArrayMap " + (System.currentTimeMillis() - ct));
         ct = System.currentTimeMillis();
         myChannels = parseStringArray(this, R.array.channels_and_logos);
-        Log.d("PlutoArray", "Millis to create Sparse " + (System.currentTimeMillis() - ct));
+        Log.d("PlutoArray", "Millis to create res Sparse " + (System.currentTimeMillis() - ct));
         Log.d("PlutoArray", "----");
     }
 
@@ -54,26 +54,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static SparseArray<String> parseStringArray(Context context, int stringArrayResourceId) {
+        String[] stringArray = context.getResources().getStringArray(stringArrayResourceId);
         SparseArray<String> outputArray = new SparseArray<>();
-//        for (String entry : stringArray) {
-//            String[] splitResult = entry.split("\\|", 2);
-//            outputArray.put(Integer.valueOf(splitResult[0]), splitResult[1]);
-//        }
-        for (int i = 0; i < 100000; i++) {
-            outputArray.put(i, "Pluto Array");
+        for (String entry : stringArray) {
+            String[] splitResult = entry.split("\\|", 2);
+            outputArray.put(Integer.valueOf(splitResult[0]), splitResult[1]);
         }
+//        for (int i = 0; i < 100000; i++) {
+//            outputArray.put(i, "Pluto Array");
+//        }
         return outputArray;
     }
 
     public static ArrayMap<Integer, String> parseStringArray2(Context context, int stringArrayResourceId) {
+        String[] stringArray = context.getResources().getStringArray(stringArrayResourceId);
         ArrayMap<Integer, String> outputArray = new ArrayMap<>();
-//        for (String entry : stringArray) {
-//            String[] splitResult = entry.split("\\|", 2);
-//            outputArray.put(Integer.valueOf(splitResult[0]), splitResult[1]);
-//        }
-        for (int i = 0; i < 100000; i++) {
-            outputArray.put(i, "Pluto Array");
+        for (String entry : stringArray) {
+            String[] splitResult = entry.split("\\|", 2);
+            outputArray.put(Integer.valueOf(splitResult[0]), splitResult[1]);
         }
+//        for (int i = 0; i < 100000; i++) {
+//            outputArray.put(i, "Pluto Array");
+//        }
         return outputArray;
     }
 }
