@@ -8,7 +8,7 @@ The results I got (in miliseconds):
 
 ![http://i.imgur.com/yZKYEGO.png](http://i.imgur.com/yZKYEGO.png)
 
-According to documentation, both [SparseArray](http://developer.android.com/reference/android/util/SparseArray.html) and [ArrayMap](https://developer.android.com/reference/android/support/v4/util/ArrayMap.html) ins't good for appropriate for data structures that may contain large numbers of items and both will fall behind HashMap when it comes to handle large data structures. Also, for containers holding up to hundreds of items, both have not significant performance difference, less than 50%.
+According to documentation, both [SparseArray](http://developer.android.com/reference/android/util/SparseArray.html) and [ArrayMap](https://developer.android.com/reference/android/support/v4/util/ArrayMap.html) ins't appropriate for data structures that may contain large numbers of items and both will fall behind HashMap when it comes to handle large data structures. Also, for containers holding up to hundreds of items, both have not significant performance difference, less than 50%.
 
 However, I still think `SparseArray` is lighter and faster than `ArrayMap`:
 
