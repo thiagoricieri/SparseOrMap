@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">SparseOrMap</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="channels_and_logos">
+        <item>408|4k</item>
+        <item>202|bloomberg</item>
+        <item>406|cats-247</item>
+        <item>113|christian</item>
+        <item>514|classic-toons</item>
+        <item>425|classic-tv</item>
+        <item>204|complex</item>
+        <item>104|country-hits</item>
+        <item>102|dance-hits</item>
+        <item>411|drivers-and-cars</item>
+        <item>107|edm</item>
+        <item>419|eye-candy</item>
+        <item>000|fail</item>
+        <item>504|failarmy</item>
+        <item>306|fight</item>
+        <item>307|fight-life</item>
+        <item>308|glory-kickboxing</item>
+        <item>106|hip-hop</item>
+        <item>207|investigate-tv</item>
+        <item>000|kickboxing</item>
+        <item>903|kids-science</item>
+        <item>502|late-night-tv</item>
+        <item>417|movie-trailers</item>
+        <item>201|news</item>
+        <item>212|newsmax-tv</item>
+        <item>105|party-playlists</item>
+        <item>000|sci-fi</item>
+        <item>501|standup</item>
+        <item>205|tech-news</item>
+    </string-array>
+</resources>
